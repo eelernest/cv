@@ -429,19 +429,98 @@ nav div ul li a i{
      font-size: 14px;
      margin: 8px;
  }
+ .tilt{
+    position: absolute;
+    width: 33.3%;
+    height: 33.33%;
+ }
+ .tilt-effect1{
+     top: 0px;
+     left: 0px;
+     z-index: 4;
+ }
+ .tilt-effect2{
+    top: 0px;
+    left: 33.33%;
+    z-index: 4;
+}
+.tilt-effect3{
+    top: 0px;
+    left: 66.6%;
+    z-index: 4;
+}
+.tilt-effect4{
+    top: 33.33%;
+    left: 0px;
+    z-index: 4;
+}
+.tilt-effect5{
+    top: 33.33%;
+    left: 33.33%;
+    z-index: 4;
+}
+.tilt-effect6{
+    top: 33.33%;
+    left: 66.6%;
+    z-index: 4;
+}
+.tilt-effect7{
+    top: 66.6%;
+    left: 0px;
+    z-index: 4;
+}
+.tilt-effect8{
+    top: 66.6%;
+    left: 33.33%;
+    z-index: 4;
+}
+.tilt-effect9{
+    top: 66.6%;
+    left: 66.6%;
+    z-index: 4;
+}
+.tilt-effect1:hover ~ .card-contact{
+    transform: rotateX(-20deg) rotateY(20deg); 
+}
+.tilt-effect2:hover ~ .card-contact{
+    transform: rotateX(-20deg) rotateY(0deg); 
+}
+.tilt-effect3:hover ~ .card-contact{
+    transform: rotateX(-20deg) rotateY(-20deg); 
+}
+.tilt-effect4:hover ~ .card-contact{
+    transform: rotateX(0deg) rotateY(25deg); 
+}
+.tilt-effect5:hover ~ .card-contact{
+    transform: rotateX(0deg) rotateY(0deg); 
+}
+.tilt-effect6:hover ~ .card-contact{
+    transform: rotateX(0deg) rotateY(-25deg); 
+}
+.tilt-effect7:hover ~ .card-contact{
+    transform: rotateX(20deg) rotateY(25deg); 
+}
+.tilt-effect8:hover ~ .card-contact{
+    transform: rotateX(20deg) rotateY(0deg); 
+}
+.tilt-effect9:hover ~ .card-contact{
+    transform: rotateX(20deg) rotateY(-25deg); 
+}
  .col-contact{
-     margin-top: 10vh;
+    perspective: 1000px;
+    position: relative;
     width: 100%;
-    background-color: white;
-    padding: 25px;
     font-family: sans-serif;
-    border-radius: 10px;
+    border-radius: 15px;
+    
+ }
+ .card-contact{
+    background-color: white;
+    border: none;
+    transition: all ease-in-out 0.6s;
     border: solid 1px #f5f5f5;
     box-shadow: 0px -2px 30px #F1F1F1, 0px 10px 20px #f5f5f5;
     -webkit-box-shadow: 0px -2px 30px #F1F1F1, 0px 10px 20px #f5f5f5;
- }
- .card-contact{
-     border: none;
  }
  .contact-header{
     text-align: center;

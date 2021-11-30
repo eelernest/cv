@@ -430,17 +430,21 @@ nav div ul li a i{
      margin: 8px;
  }
  .col-contact{
+     margin-top: 10vh;
+    width: 100%;
     background-color: white;
     padding: 25px;
     font-family: sans-serif;
+    border-radius: 10px;
+    border: solid 1px #f5f5f5;
     box-shadow: 0px -2px 30px #F1F1F1, 0px 10px 20px #f5f5f5;
     -webkit-box-shadow: 0px -2px 30px #F1F1F1, 0px 10px 20px #f5f5f5;
-    
  }
  .card-contact{
      border: none;
  }
  .contact-header{
+    text-align: center;
      border: none;
  }
  .list-group-item{

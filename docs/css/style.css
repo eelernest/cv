@@ -290,6 +290,26 @@ nav div ul li a i{
     border-radius: 50%;
     background-color: #888;
 }
+.circle-borde1-right{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #888;
+}
+.circle-borde-1-left{
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: calc(100% - 2px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #888;
+}
 .circle-borde2{
     content: "";
     position: absolute;

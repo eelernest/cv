@@ -1,0 +1,201 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+	padding: 40px;
+	transition: all ease-in-out 0.6s;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.title {
+  width: 100%;
+  background-color: white;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  border-bottom: rgb(160, 160, 160) solid 1px;
+}
+.objetive {
+  display: flex;
+  justify-content: start;
+  padding: 40px;
+  color: #505050;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 27px;
+}
+.profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+.subtitle {
+  line-height: 27px;
+  color: #141414;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+}
+.objetive-subtitle{
+  font-size: 1rem;
+}
+.about h5{
+  border-bottom: rgb(160, 160, 160) 1px solid ;
+}
+.info-list {
+  margin: 0px;
+  padding: 0px;
+}
+.info-list li {
+  list-style: none;
+  margin-top: 15px;
+}
+.i-title {
+  display: inline-block;
+  min-width: 100px;
+  font-weight: 400;
+}
+.skills h5{
+  border-bottom: rgb(160, 160, 160) 1px solid ;
+}
+.skill-names{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+}
+.webTool{
+  text-align: center;
+  font-size: 0.95rem;padding: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.abilities{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.abilities h5{
+  border-bottom: rgb(160, 160, 160) 1px solid ;
+}
+
+.cardt{
+  transition: all ease-in-out 0.3s;
+  width: 420px;
+  height: 270px;
+  border-radius: 8px;
+  border: 0.5px solid rgb(209, 209, 209);
+}
+.img-service{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all ease-out 0.4s;
+  border: 1px solid #e2e2e2;
+}
+.i-resume{
+  font-size: 23px;
+  color: rgb(80, 80, 80);
+}
+.service-title{
+  font-weight: 600;
+  font-size: 18px;
+  text-align: start;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+.card-text{
+  word-spacing: 3px;
+  text-align: start;
+  color: #505050;
+}
+.cardt:hover{
+  box-shadow: 1px 1px 15px rgb(153, 153, 153);
+  transform: translateY(-5px);
+}
+.cardt:hover .img-service{
+  background-color: rgb(223, 223, 223);
+  color: white;
+  filter: invert(100%);
+  transform: rotateY(180deg);
+}
+@media only screen and (max-width: 800px) {
+  .resume{
+    padding: 10px;
+  }
+  .title{
+    margin-top: 25px;
+  }
+  .title h1 .h6{
+    font-size: 0.9rem;
+  }
+  .objetive {
+    padding: 0px;
+    letter-spacing: 0.7px;
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+  }
+  .about{
+    margin-bottom: 55px;
+    padding: 20px;
+  }
+  .about h5{
+    text-align: center;
+  }
+  .skills h5{
+    text-align: center;
+  }
+  .skill-names{
+    flex-direction: column;
+  }
+  .container-fluid{
+    margin: 0px;
+    padding: 0px;
+  }
+  .abilities{
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .abilities h5{
+    text-align: center;
+  }
+  .cardt{
+    width: 100%;
+    height: 250px;
+  }
+  .img-service{
+    width: 40px;
+    height: 40px;
+  }
+  .i-resume{
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+  }
+  .service-title{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .card-text{
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+}

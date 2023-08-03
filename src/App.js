@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import IcoMenu from "./components/icoMenu";
+import Home from "./components/home";
+import Resume from "./components/resume";
+import Experience from './components/experience';
+import Contact from './components/contact';
+import Projects from "./components/projects";
+
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("home");
+
+  const renderPage = () => {
+    if (currentPage === "home") {
+      return <Home />;
+    } else if (currentPage === "resume") {
+      return <Resume />;
+    }else if (currentPage === "experience") {
+      return <Experience />;
+    }else if (currentPage === "projects") {
+      return <Projects />;
+    }else if (currentPage === "contact") {
+      return <Contact />;
+    }
+    
+  };
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container-main">
+      <IcoMenu setCurrentPage={setCurrentPage} />
+      {renderPage()}
+      </div>
     </div>
   );
 }

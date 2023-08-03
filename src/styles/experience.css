@@ -1,0 +1,156 @@
+.experience{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: white;
+	padding: 40px;
+	transition: all ease-in-out 0.6s;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.experience::-webkit-scrollbar{
+	width: 2px;
+	border-radius: 4px;
+	background-color: #CDCDCD;
+}
+.experience::-webkit-scrollbar-thumb{
+	background-color: black;
+}
+.card-img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	transition: all ease-in-out 0.6s
+}
+.exp-title{
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.exp-subtitle{
+	font-size: 0.9rem;
+	font-family: 'Dosis', sans-serif;
+	text-transform: none;
+}
+.exp{
+	line-height: 1.2rem;
+	margin-bottom:10px;
+	font-size: 0.8rem;
+	color: #555;
+}
+.card-img:hover{
+	box-shadow: 1px 1px 20px gray;
+	transform:translateY(-8px);
+}
+.cards-right{
+	margin-top: 60px;
+	position: relative;
+}
+.cards-left{
+	margin-top: 60px;
+	position: relative;
+}
+.job-exp{
+	position: relative;
+	width: 100%;
+	margin-left: 0%;
+	padding-top: 30px;
+	padding-left: 50px;
+	border-left: 2px solid #eee;
+}
+.edu-exp{
+	position: relative;
+	width: 90%;
+	padding-top: 30px;
+	padding-right: 50px;
+	border-right: 2px solid #eee;
+	text-align: right;
+}
+i{
+	color: #fff;
+	font-size: 20px;
+}
+.left-ico{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	background: #3b414c;
+	position: absolute;
+	top: -40px;
+	right: calc(10% - 8px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-ico{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	align-items: center;
+	border-radius: 50%;
+	color: #fff;
+	background: #3b414c;
+	position: absolute;
+	top: -40px;
+	left: calc(0% - 6px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}/* 
+.collapse-hover{
+	transition: all 0.3s ease-in-out;
+}
+.collapse-hover:hover{
+	border-bottom: 1px solid rgb(82, 82, 82);
+} */
+.circle{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #888;
+}
+.circle-left{
+	left: calc(100% - 2px);
+}
+.left-1{
+	top: 40px;
+}
+
+
+.circle-right{
+	right: calc(100% - 2px);;
+}
+.right-1{
+	top: 41px;
+}
+@media only screen and (max-width: 800px) {
+    .experience{
+		padding: 25px;
+	}
+	.title h1{
+		margin-top: -25px;
+		font-size: 1.4rem;
+	}
+	.card-img{
+		height: 100px;
+	}
+	.job-exp{
+		width: 98%;
+		padding-left: 15px;
+		margin-left: 5px;
+	}
+	.edu-exp{
+		width: 98%;
+		padding-right: 15px;
+	}
+	.left-ico{
+		right: 0px;
+	}
+  }

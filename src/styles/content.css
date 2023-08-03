@@ -1,0 +1,16 @@
+.contain-content{
+    width: 92%;
+    height: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+    transition: all ease-out 0.4s;
+    box-shadow: 8px 0px 16px #CFCFCF ;
+  }
+  .contain-content::-webkit-scrollbar{
+    width: 2px;
+    border-radius: 4px;
+    background-color: #CDCDCD;
+}
+.contain-content::-webkit-scrollbar-thumb{
+    background-color: black;
+}

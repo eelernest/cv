@@ -1,0 +1,80 @@
+.menu-contain{
+  position: relative;
+    padding: 10px;
+    width: 95px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-right: 1px solid #ededed;
+    box-shadow: -8px 0px 16px #CFCFCF ;
+  }
+.ico-menu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .ico-descarga{
+    position: absolute;
+    bottom: 0px;
+  }
+  .ico-menu svg{
+    color: black;
+  }
+  .ico-menu:hover{
+    transition: all 0.4s ease-out;
+    background-color: black;
+  }
+  .ico-menu:hover svg{
+    color: white;
+  }
+  @media only screen and (max-width: 800px) {
+    .menu-contain{
+      flex-direction: row;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 10%;
+      justify-content:space-around;
+      align-items: center;
+      
+    }
+    .ico-menu{
+      border-radius: 0px;
+      margin-top: 18px;
+      width: 30px;
+      background-color: white;
+    }
+    .ico-descarga{
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      background-color:#F5F5F5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -93vh;
+      right: 10px;
+      z-index: 3;
+    }
+    .ico-menu svg{
+      width: 20px;
+      height: 20px;
+    }
+    .ico-menu:hover{
+    background-color: white;
+    }
+    .ico-menu:hover svg{
+      /* color: rgb(99, 99, 99); */
+      filter: invert(50%);
+    }
+  }
